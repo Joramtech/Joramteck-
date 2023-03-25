@@ -1,4 +1,14 @@
 # Starter pipeline
+- task: AzureCloudPowerShellDeployment@1
+  inputs:
+    EnableAdvancedStorageOptions: false
+    StorageAccount: '.'
+    ServiceName: 'azure cloud'
+    CsPkg: 
+    CsCfg: 'xed'
+    slotName: 'Production'
+    DeploymentLabel: '1.0'
+    AllowUpgrade: true
 # Start with a minimal pipeline that you can customize to build and deploy your code.
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
